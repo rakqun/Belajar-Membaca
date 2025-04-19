@@ -42,6 +42,7 @@ Sebuah aplikasi edukasi berbasis Android yang dirancang khusus untuk membantu an
 - **MediaPlayer / SoundPool** untuk efek suara
 - **Room / SQLite** sebagai local storage
 - **Custom View** & Animasi interaktif
+- **Firebase** Realtime Database
 
 ---
 
