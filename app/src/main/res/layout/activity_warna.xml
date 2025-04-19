@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_object"
+    tools:context=".object.WarnaActivity">
+
+    <ImageView
+        android:id="@+id/btnHomeObjectWarna"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/home"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btnBackObjectWarna"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/back_btn"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/imgFrame"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imgObject"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textSize="54sp"
+            android:textStyle="bold"
+            app:cardCornerRadius="80dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvKata1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="64sp"
+                android:textAllCaps="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:visibility="gone"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvKata2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textAllCaps="true"
+                android:textSize="64sp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvKata3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textAllCaps="true"
+                android:textSize="64sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvKata4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="64sp"
+                android:textAllCaps="true"
+                android:visibility="gone"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnNextHewan"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/next"
+        app:layout_constraintStart_toEndOf="@id/imgFrame"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/btnBackHewan"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/back"
+        app:layout_constraintEnd_toStartOf="@id/imgFrame"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

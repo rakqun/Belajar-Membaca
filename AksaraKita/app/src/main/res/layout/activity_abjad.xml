@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_awal"
+    tools:context=".huruf.AbjadActivity">
+
+    <ImageView
+        android:id="@+id/btnHomeAbjad"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/home"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btnBackAbjad"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/back_btn"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <RelativeLayout
+        android:id="@+id/imgFrame"
+        android:layout_width="390dp"
+        android:layout_height="250dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:src="@drawable/frame_abjad"/>
+
+        <ImageView
+            android:id="@+id/huruf"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/a"
+            android:layout_marginStart="40dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btnNext"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/next"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/imgFrame"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/back"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@id/imgFrame"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
